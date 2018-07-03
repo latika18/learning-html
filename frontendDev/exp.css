@@ -1,0 +1,32 @@
+body, * {
+  font-family: "Arial", sans-serif;
+  box-sizing: boreder-box;
+}
+.menu{
+  background-color: #666;
+  list-style: none;
+  margin: 0;
+}
+
+.menu-item{
+  float:left;
+}
+
+.menu-item-info{
+  display:none;
+}
+
+.menu-item a{
+  display:block;
+  color:#eee;
+  text-decoration:none;
+  padding:1em
+}
+
+.menu-item a:hover{
+  color:#333;
+  background-color: #fff;
+}
+.cf{
+  clear:both;
+}
