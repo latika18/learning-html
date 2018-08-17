@@ -1,33 +1,41 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
-</head>
-<body>
-  <ul id="main-menu" class="menu">
-    <li class="menu-item">
-        <a href="#" > Home</a>
-      <div class="menu-item-info">
-        This is the Home menu
-      </div>
-     </li>
-    <li class="menu-item">
-        <a href="#" > About us</a>
-      <div class="menu-item-info">
-        This is the About Us menu
-      </div>
-     </li>
-    <li class="menu-item">
-        <a href="#" > Contact</a>
-      <div class="menu-item-info">
-        This is the Contact us menu
-      
-     </li>
-   </div>
-      <div class="cf"> </div>   
-  
-  </ul>
-</body>
-</html>
+$(function(){
+
+    var $container = $('#main-menu');
+
+    function handleMenu() {
+
+        function toggleInfoPanel(anchor) {
+          var infoPanelEl = $(this).siblings('.menu-item-info');
+          infoPanelEl.toggleClass('is-visible');
+        }
+
+        $('.menu-item > a')
+          .mouseover(toggleInfoPanel)
+          .mouseout(toggleInfoPanel);
+    }
+
+    function buildMenuItem(data) {
+        var $el,
+            $infoPanel;
+
+        $el = $('<li class="menu-item">' +
+                    '<a href="#">' + data.title + '</a>' +
+                    '<div class="menu-item-info"></div>' +
+                '</li>' );
+
+        return $el;
+    }
+
+    $.get('api/menu.json', function(data){
+        //data has been loaded.
+        //console.log(data);
+
+        //clean the content of the UL element first
+        $container.empty();
+
+        data.forEach(function(menuItem) {
+            $container.append(buildMenuItem(menuItem));
+        });
+    }, 'json');
+
+});
