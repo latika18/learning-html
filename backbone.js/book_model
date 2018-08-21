@@ -1,0 +1,20 @@
+//var mybook = new Backbone.Model();
+var book = new Backbone.Model.extend({
+  defaults: {
+    isbn: '',
+    title: '',
+    author: ''    
+  }
+});
+
+var myBook = new book();
+// Google API for retrieving info on a book in the store
+// https://www.googleapis.com/books/v1/volumes/i4iMDAAAQBAJ 
+
+var GoogleBook = Backbone.Model.extend({
+  urlRoot: ' https://www.googleapis.com/books/v1/volumes/'
+});
+
+var chanakyaneetiBook = new GoogleBook({id:'i4iMDAAAQBAJ'});
+
+chanakyaneetiBook.fetch();
