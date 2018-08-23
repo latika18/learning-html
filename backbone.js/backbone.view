@@ -1,0 +1,27 @@
+//lets create our type for the view
+var BookModel = Backbone.Model.extend({
+  defaults: {
+    title: 'new book',
+    author: 'no author '
+  }
+});
+
+var BookView = Backbone.View.extend({
+  //responsible for displaying the model managed byy the view on screen
+  render: function() {
+    var jsonModel = this.model.toJSON();
+
+    this.$el.html( 
+      "<h1>"+ jsonModel.title + "</h1>"+
+      "<span>" + jsonModel.author + "</span>"
+    );
+  }
+});
+
+var book = new BookModel();
+var view = new BookView({
+  el:'#book-view',
+  model: book
+});
+
+view.render();
