@@ -1,0 +1,16 @@
+//https://www.googleapis.com/books/v1/volumes?q=scifi
+var GoogleBook =  Backbone.Model.extend({
+  type: 'GoogleBook Constructor'
+});
+
+var GoogleBooks = Backbone.Collection.extend({
+  model: GoogleBook,
+  url: 'https://www.googleapis.com/books/v1/volumes?q=scifi',
+
+  parse: function(data) {
+  return data.items;
+  }
+                                                    
+});
+
+var books = new GoogleBooks();
