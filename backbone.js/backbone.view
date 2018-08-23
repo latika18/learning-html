@@ -7,6 +7,11 @@ var BookModel = Backbone.Model.extend({
 });
 
 var BookView = Backbone.View.extend({
+  initialize: function() {
+    this.listenTo(this.model, "change", this.render)
+  },
+  
+  
   //responsible for displaying the model managed byy the view on screen
   render: function() {
     var jsonModel = this.model.toJSON();
