@@ -1,0 +1,57 @@
+<html>
+<head>
+<title> Best Pizza Ever </title>
+
+</head>
+<body>
+  <header>
+    <h1>Best Pizza Ever</h1>
+  </header>
+  <section id="Contact-form">
+    <h2>Place Order</h2>
+    <form method="get" action="place-order.php">
+      <input name="delivery" type="radio" value="Delivery" />Delivery <br/>
+      <input name="delivery" type="radio" value="Pick-up" />Pick-up<br/>
+
+
+        <h2>Delivery Address</h2>
+
+        <input name="adrress1" placeholder="Adress Line 1" class="lg-input"/><br/><br/>
+        <input name="adrress1" placeholder="Adress Line 1" class="lg-input"/><br/>
+
+        <input name="city" placeholder="City" class="sm-input">
+        <input name="state" placeholder="State" class="sm-input"><br/>
+        <input name="zip" placeholder="Zip Code" class="sm-input">
+        <br />
+
+        <h2>Order Size</h2>
+        <select name="size">
+          <option value="12">12" - 200Rs</option>
+          <option value="16">16" - 300Rs</option>
+          <option value="20">20" - 400Rs</option>
+          <option value="24">24" - 500Rs</option>
+        </select>
+
+        <br />
+        <h2>Ingredients</h2>
+        <input name="pepperoni" type="checkbox" />pepperoni<br/>
+        <input name="salomi" type="checkbox" />salomi <br/>
+        <input name="cheese" type="checkbox" />cheese<br/>
+        <input name="Onion" type="checkbox" />onion <br/>
+        <input name="Margarita" type="checkbox" />margarita<br/>
+        <input name="Country Field" type="checkbox" />country field <br/>
+
+        <br/>
+        <br/>
+
+        <button type="submit" >Place order</button>
+
+  </section>
+<br/>
+
+<footer>
+&copy; Copyright 2017<br/>
+<a href="#">Terms and Conditions</a>
+</footer>
+</body>
+</html>
