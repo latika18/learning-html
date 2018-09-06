@@ -9,11 +9,17 @@ function buttonClicked() {
   console.log("Button clicked");
 
   var customText = document.getElementsByClassName("my-input");
+  var textArea = document.getElementsByClassName("my-textarea");
+
   var results = document.getElementById('text');
 
-  console.log(customText);
-  results.innerHTML = "Heloo, " + customText[0].value;
+  results.innerHTML = "Heloo, " + customText[0].value + "<br />" ;
+
+
+  console.log(textArea);
+  results.innerHTML += "Message" + textArea[0].value;
 
 }
 
 btn.addEventListener("click",buttonClicked);
+
