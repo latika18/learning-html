@@ -1,4 +1,5 @@
-$(document).ready(function() {
+/*******Before this load jquery script link in html doc
+**********/$(document).ready(function() {
   alert('loaded');
 
   var el = document.getElementById('text');
