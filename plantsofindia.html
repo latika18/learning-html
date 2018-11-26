@@ -7,14 +7,139 @@
 	<meta name="viewport" content="width=device-width, intital-scale=1" />
 
 	<script src="jquery.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/	bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+	
+	
+	
 
 	<style type="text/css">
+
+	.header {
+		font-size: 10px;
+		margin: 5px;
+		padding: 5px;
+		height: 100px;
+
+	}
+	.header a{
+		font-size: 20px;
+		color: black;
+		float: left;
+		text-decoration: underline;
+		margin-left:  4px;
+		margin-right: 4px;
+		
+
+
+	}
+
+	#search {
+		height: 20px;
+		width: 20px;
+		margin-left:  4px;
+		margin-right: 4px;
+		margin-top: 3px;
+
+	}
+
+
+	.container {
+		margin: 0 ;
+		padding: 0;
+	}
+
+	.jumbotron {
+		padding: 0;
+		margin: 0;
+
+		
+	}
+
+	#coverimage{
+		
+		height: 450px;
+		padding: 0;
+		margin: 0;
+	}
+
+	.maincontent {
+		padding: 20px;
+		margin: 0 auto;
+		width: 800px;
+	}
+
+	.maincontent img {
+		width: 300;
+
+
+	}
+	
 	</style>
 </head>
 
 <body>
-	<div class="topbar">
+	<div class="header"> 
+		<h1>Plants Of India</h1>
+	
+		<a href="#" id="home">Home</a>
+		<a href="#" id="about">About</a>
+
+		<a href="#" id="contact">Contact Us</a>
+		<a hrer="#"> <img  id="search" src="search.jpg"></a>
 
 	</div>
+
+	<div class="container">
+		
+  		<div class="jumbotron">
+  			<a href="#"> <img id="coverimage" src="coverimage.jpeg"></a>
+    		
+  		</div>
+  		<p></p> 
+  		<p></p> 
+	</div>
+
+	<div class="maincontent">
+		<p> Plants have medicinal value too along with ornamental purpose. Indians and Chinese have been using plants as medicines to treat wounds and pacify the inflammation. The ancient science of Ayurveda and Yoga relies heavily on these plants to treat major conditions, from pain management to weight management and everything in between. Arena Flowers brings you the lowdown on the plants you can grow in the backyard or even in the kitchen garden easily! Keep them growing and keep nurturing them so that you can utilize them and treat your condition naturally!</p>
+
+
+
+		<h2>Aloe Vera</h2>
+		<img src="aloevera.jpg">
+		<p> 
+		Extremely easy to grow, aloe vera is India’s most favorite and a succulent plant that is low-on-maintenance and easy-to-grow! The plant is a trusted remedy for Indians to treat skin inflammation, breakouts, and burns.  Its juice is well-known to boost a weak immune system. It is believed to be full of oxidants, which help the body to fight free radicals and stay fit as well as young!	
+		</p>
+		<br><br>
+
+		<h2> Tulsi/Basil </h2>
+		<img src="tulsi.jpg">
+		<p>Tulsi or Holy Basil is called ‘Elixir of Life’ in Ayurveda in India and well known medicinal plant. It has been proved that Tulsi clears away the pollutants within the ten miles of its radius. Besides, Tulsi tea in India is very effective in treating common cold and flu. The plant also features in NASA list of air-purifying plants.  Its leaves can treat digestive issues and are also believed to have anti-cancer properties.
+		</p>
+		<br><br>
+
+		<h2> Coriander</h2>
+		<img src="coriander.jpg">
+		<p>Easy to sow, coriander is a no-fuss medicinal plant in India. Use any container to sow the seeds and put it on a window sill. It doesn’t need much sunlight or water. The little shoots of leaves would appear within a week. The young leaves can be plucked to put in curd, raita or vegetables to enhance the flavor as well as to utilize the benefit. Indian Dhania leaves are refreshing and treat digestive issues.</p>
+
+		<h2>Mint </h2>
+		<img src="mint.jpg">
+		<p> A very homegrown medicinal plant in India. The fragrance of mint leaves is enough to refresh your mind and make you feel good! In summer in India, mint leaves seem to be a godsend as its fragrance is rejuvenating! Mint tea helps you stay calm and if you are insomniac, mint tea can help you feel composed and have a sound sleep. Its fragrance is believed to keep the mosquitoes away. It is very beneficial in treating cold, cough, and diarrhea.</p>
+
+		<h2> Money Plant</h2>
+		<img src="moneyplant.jpg">
+		<p>Scindapsus aureus is the scientific name of the "money plant" grown in homes in Asia. Epipremnum aureum is another scientific name that many consider synonymous. Besides "money plant," other commonly used names for this plant are "pothos," "silver vine," "devil's ivy," "and "Solomon Islands ivy." This plant is native to Southeastern Asia and New Guinea. It belongs to the Araceae family, which contains more than 100 genera.</p>
+		
+
+
+	</div>
+	<script type=" text/javascript">
+		$("#coverimage").width($(window).width());
+
+		$("#search").click(function() {
+		alert(hello);
+	});
+		
+	</script>
 </body>
 </html>
