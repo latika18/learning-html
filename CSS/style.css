@@ -1,0 +1,87 @@
+body, *, *:before,*:after {
+
+	box-sizing: border-box;
+
+}
+
+html, header {
+	
+	font-family: Helvetica , sans-serif;
+	font-size: 16px;
+	color: #474747;
+
+}
+
+h1,h2,h3,h4 {
+
+	font-family: 'Economica', sans-serif;
+	font-family: 'Pacifico', cursive;
+	font-weight: bold;
+	margin :0 0 1em;
+}
+
+
+h2 {
+	font-weight: 1.6rem;
+}
+
+h3 {
+	font-weight: 1.4rem;
+}
+
+.fixed-width {
+
+	width: 940px;
+	margin: 0 auto;
+}
+.clearfix:before,.clearfix:after {
+	content: '';
+	display: table;
+}
+
+
+/**************
+HEADER
+**************/
+
+
+.main-header {
+	
+	border-top: 5px solid grey;
+	padding-bottom: 2em;
+	}
+
+
+
+	.main-header #header {
+		font-family: 'Pacifico', cursive;
+		font-size:3.6rem;
+		bottom: 0;
+		font-weight: bold;
+		float: left;
+		margin-top: 0.5em;
+		margin-right: 1em;
+	}
+
+	.main-header div nav li {
+		font-family: 'Economica', sans-serif;
+		text-transform : uppercase;
+		float: right;
+		margin-right: 2em;
+		padding-top: 0.5em;
+
+		
+	}
+	.main-header div nav li:last-child {
+
+		margin-right: 0;
+	}
+
+
+	.main-header  nav em {
+		display: block;
+		font-weight: bold;
+		font-size:1.6rem;
+		padding-top: 0.5em;
+	}
+
