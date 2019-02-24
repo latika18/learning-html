@@ -17,11 +17,11 @@
 
     <form>
   <div class="form-group">
-    <label for="exampleFormControlInput1">Email address</label>
+    <label for="exampleFormControlInput1">Email address : </label>
     <input type="email" class="form-control" id="exampleFormControlInput1" >
   </div>
   <div class="form-group">
-    <label for="subject">Subject</label>
+    <label for="subject">Subject : </label>
     <input type="text" class="form-control" id="subject">
 
   </div>
